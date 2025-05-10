@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Regan Distributors</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- Header / Nav -->
+  <header class="bg-white shadow-sm fixed w-full z-10">
+    <div class="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-xl font-bold">Regan Distributors</h1>
+      <nav>
+        <a href="#why" class="px-3 hover:text-green-600">Why Us</a>
+        <a href="#products" class="px-3 hover:text-green-600">Products</a>
+        <a href="#about" class="px-3 hover:text-green-600">About</a>
+        <a href="#quote" class="px-3 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-24 bg-green-50">
+    <div class="max-w-3xl mx-auto text-center py-20">
+      <h2 class="text-4xl font-extrabold mb-4">Your Organic Produce Partner Since 1951</h2>
+      <p class="text-lg mb-6">Farm-to-pallet traceability • Specialty SKUs • Next-day LA Metro delivery</p>
+      <a href="#quote" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- Why Regan -->
+  <section id="why" class="py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h3 class="text-2xl font-semibold mb-2">Full Traceability</h3>
+        <p>Track every lot from farm to pallet.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold mb-2">Specialty SKUs</h3>
+        <p>Broccoli crowns, mixed-leaf blends, cauliflower medley, and more.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold mb-2">Next-Day Delivery</h3>
+        <p>Guaranteed LA Metro delivery on fresh pallets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section id="products" class="bg-green-50 py-16">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-8">Featured Products</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Repeat this block for each SKU -->
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400?text=Broccoli+Crowns" alt="Broccoli Crowns" class="w-full h-48 object-cover"/>
+          <div class="p-4">
+            <h4 class="font-semibold mb-2">Broccoli Crowns</h4>
+            <p>Premium hand-trimmed crowns—perfect for chefs and distributors.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400?text=Mixed+Leaf+Blend" alt="Mixed Leaf Blend" class="w-full h-48 object-cover"/>
+          <div class="p-4">
+            <h4 class="font-semibold mb-2">Mixed Leaf Blend</h4>
+            <p>Romaine, green leaf & red leaf for versatile salad mixes.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400?text=Cauliflower+Medley" alt="Cauliflower Medley" class="w-full h-48 object-cover"/>
+          <div class="p-4">
+            <h4 class="font-semibold mb-2">Cauliflower Medley</h4>
+            <p>Assorted florets, ready-to-use or for custom processing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Certifications -->
+  <section id="about" class="py-16">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2">
+        <h3 class="text-3xl font-bold mb-4">About Regan Distributors</h3>
+        <p class="mb-4">Family-owned since 1951, Regan Distributors has been at the forefront of organic vegetable distribution in Southern California. We partner with certified organic growers to deliver the freshest produce—every day.</p>
+        <div class="flex items-center gap-4">
+          <img src="https://via.placeholder.com/80x80?text=NOP" alt="USDA NOP Badge"/>
+          <img src="https://via.placeholder.com/80x80?text=Handling" alt="Handling Certification"/>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="https://via.placeholder.com/600x400?text=Farm+to+Pallet" alt="Farm to Pallet" class="rounded-lg shadow"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request a Quote -->
+  <section id="quote" class="bg-green-50 py-16">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-4 text-center">Request a Quote</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded-md"/>
+        <input type="text" placeholder="Company" class="w-full p-3 border rounded-md"/>
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded-md"/>
+        <textarea placeholder="Produce needed & quantity" class="w-full p-3 border rounded-md"></textarea>
+        <button type="submit" class="w-full bg-green-600 text-white p-3 rounded-md hover:bg-green-700">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-8">
+    <div class="max-w-5xl mx-auto text-center text-sm text-gray-500">
+      <p>© 2025 Regan Distributors Inc. All rights reserved.</p>
+      <p>123 Organic Way, Santa Ana, CA • (123) 456-7890</p>
+    </div>
+  </footer>
+
+</body>
+</html>
